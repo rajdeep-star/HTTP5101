@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Skidiving Incident Report</title>
+</head>
+<body>
+    <!-- HTML Form 1-->
+    <form method="get" action="https://postman-echo.com/get">
+        <h1>Skidiving Incident Report Form</h1>
+        <h2>Enter the victim's details for whom you want to access the report.</h2>
+        <label for="victim_firstname">First Name:</label>
+        <input type="text" id="victim_firstname" name="victim_firstname" />
+        <label for="victim_lastname">Last Name:</label>
+        <input type="text" id="victim_lastname" name="victim_lastname" />
+        <label for="victim_phone">Phone Number:</label>
+        <input type="text" id="victim_phone" name="victim_phone" />
+
+        <h3>Gender</h3>
+        <label>Male</label>
+        <input type="radio" id="male" name="f-male" />
+
+        <label>Female</label>
+        <input type="radio" id="female" name="f-male" />
+
+        <h3>Select the city where the incident took place:</h3>
+        <label for="city">Location:</label>
+        <select id="city" name="city">
+            <option value="Brampton">Brampton</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Etobicoke">Etobicoke</option>
+            <option value="Missisaga">Missisaga</option>
+        </select>
+
+        <h3>Have you submitted a report form before ?</h3>
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="yes_no" />
+
+        <label for="no">No</label>
+        <input type="radio" id="no" name="yes_no" />
+
+        <h3>Mark the documents you are attaching with the report form: </h3>
+        <div>
+            <input type="checkbox" id="photo_id" name="photo_id" />
+            <label for="photo_id">Photo ID</label>
+        </div>
+        <div>
+            <input type="checkbox" id="ski_certificate" name="ski_certificate" />
+            <label for="ski_certificate">Skidiving Training Certificate</label>
+        </div>
+        <div>
+            <input type="checkbox" id="member_card" name="member_card" />
+            <label for="member_card">Skidiving Membership Card</label>
+        </div>
+        <div>
+            <input type="checkbox" id="insurance_card" name="insurance_card" />
+            <label for="insurance_card">Health Insurance Card</label>
+        </div>
+
+        <h3>Check all that apply!</h3>
+        <label for="receiving_time"> Report is required within a week.</label>
+        <input type="checkbox" id="receiving_time" name="receiving_time" />
+
+        <label for="copy_of_report">Report is required in both forms-- Hard copy and Soft copy.</label>
+        <input type="checkbox" id="copy_of_report" name="copy_of_report" />
+
+        <label for="investigation">Report needs to  be submitted to higher authorities for investigation.</label>
+        <input type="checkbox" id="investigation" name="investigation" />
+        <div>
+            <input type="submit" id="submit" name="submit" />
+        </div>
+    </form>
+</body>
+</html>
