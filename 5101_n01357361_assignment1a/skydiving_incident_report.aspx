@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <h1>Skidiving Incident Report Form</h1>
+        <h1>Skidiving Incident Report Form</h1> <!-- mytopic -->
             
             <h2>Enter the victim's details for whom you want to access the report.</h2>
             <label>First Name:</label>
@@ -88,8 +88,6 @@
               <!-- <div runat="server" id="testbox"></div> --> 
             
             <asp:Button runat="server" text="submit"/> 
-     
-
-    </form>
+     </form>
 </body>
 </html>

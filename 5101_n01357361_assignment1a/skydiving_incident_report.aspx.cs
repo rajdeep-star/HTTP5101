@@ -27,10 +27,12 @@ namespace _5101_n01357361_assignment1a
                     int Copies_Of_Report = Convert.ToInt32(number_of_copies.Text);
                     string Importance_Of_Querry = importance.Text.ToString();
 
-                    report.InnerHtml = "You have provided the following information: <br>";
+                    report.InnerHtml += "You have provided the following information: <br>";
                     report.InnerHtml += " First Name: " + Victim_Firstname + "<br>";
                     report.InnerHtml += " Last Name: " + Victim_Lastname + "<br>";
                     report.InnerHtml += " Phone Number: " + Victim_Phone + "<br>";
+                    report.InnerHtml += " Incident Location: " + Incident_Location + "<br>";
+                    report.InnerHtml += " Number of copies of report: " + Copies_Of_Report + "<br>";
 
                     if (Importance_Of_Querry == "Requires urgent attention")
                     {
