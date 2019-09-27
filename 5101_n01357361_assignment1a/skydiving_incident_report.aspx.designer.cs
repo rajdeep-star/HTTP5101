@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
+namespace _5101_n01357361_assignment1a {
     
     
-    public partial class WebForm1 {
+    public partial class skydiving_incident_report {
         
         /// <summary>
         /// form1 control.
@@ -49,31 +49,58 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.TextBox victim_phone;
         
         /// <summary>
-        /// gender control.
+        /// victim_gender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList gender;
+        protected global::System.Web.UI.WebControls.RadioButtonList victim_gender;
         
         /// <summary>
-        /// location control.
+        /// incident_location control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList location;
+        protected global::System.Web.UI.WebControls.DropDownList incident_location;
         
         /// <summary>
-        /// general_question control.
+        /// number_of_copies control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList general_question;
+        protected global::System.Web.UI.WebControls.TextBox number_of_copies;
+        
+        /// <summary>
+        /// importance control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList importance;
+        
+        /// <summary>
+        /// report control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl report;
+        
+        /// <summary>
+        /// previous_submission control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList previous_submission;
         
         /// <summary>
         /// documents control.
@@ -92,5 +119,14 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList confirm_other_information;
+        
+        /// <summary>
+        /// testbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl testbox;
     }
 }

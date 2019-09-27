@@ -156,6 +156,7 @@
     <Content Include="Site.Master" />
     <Content Include="skydiving_incident_report.aspx" />
     <Content Include="skydiving_incident_report.html" />
+    <Content Include="testwebform.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -209,6 +210,13 @@
     </Compile>
     <Compile Include="skydiving_incident_report.aspx.designer.cs">
       <DependentUpon>skydiving_incident_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testwebform.aspx.cs">
+      <DependentUpon>testwebform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testwebform.aspx.designer.cs">
+      <DependentUpon>testwebform.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
