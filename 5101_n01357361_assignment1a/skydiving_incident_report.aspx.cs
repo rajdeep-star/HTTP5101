@@ -20,34 +20,43 @@ namespace _5101_n01357361_assignment1a
                 Page.Validate();
                 if (Page.IsValid)
                 {
-                    string Victim_Firstname = victim_firstname.Text.ToString();
-                    string Victim_Lastname = victim_lastname.Text.ToString();
-                    string Victim_Phone = victim_phone.Text.ToString();
-                    string Incident_Location = incident_location.SelectedValue.ToString();
+                    string Victim_Firstname = victim_firstname.Text;
+                    string Victim_Lastname = victim_lastname.Text;
+                    string Victim_Phone = victim_phone.Text;
+                    string Incident_Location = incident_location.SelectedValue;
                     int Copies_Of_Report = Convert.ToInt32(number_of_copies.Text);
-                    string Importance_Of_Querry = importance.Text.ToString();
+                   // string Importance_Of_Querry = importance.Text;
+                    string Previous_Submission = previous_submission.Text;
 
-                    report.InnerHtml += "You have provided the following information: <br>";
-                    report.InnerHtml += " First Name: " + Victim_Firstname + "<br>";
-                    report.InnerHtml += " Last Name: " + Victim_Lastname + "<br>";
-                    report.InnerHtml += " Phone Number: " + Victim_Phone + "<br>";
-                    report.InnerHtml += " Incident Location: " + Incident_Location + "<br>";
-                    report.InnerHtml += " Number of copies of report: " + Copies_Of_Report + "<br>";
+                    confirm_report.InnerHtml += "You have provided the following information: <br>";
+                    confirm_report.InnerHtml += " First Name: " + Victim_Firstname + "<br>";
+                    confirm_report.InnerHtml += " Last Name: " + Victim_Lastname + "<br>";
+                    confirm_report.InnerHtml += " Phone Number: " + Victim_Phone + "<br>";
+                    //confirm_report.InnerHtml += " Incident Location: " + Incident_Location + "<br>";
+                    confirm_report.InnerHtml += " Number of copies of report: " + Copies_Of_Report + "<br><br>";
+                   // confirm_report.InnerHtml += "Importance of querry:";
 
-                    if (Importance_Of_Querry == "Requires urgent attention")
+                    if (Incident_Location == "")
                     {
-                        report.InnerHtml += "Your querry requires immidiate attention.";
+                        confirm_report.InnerHtml += "You have not choosen any location!";
                     }
 
-                    if (Importance_Of_Querry == "Pending investigation.")
+                    if (Incident_Location == "Brampton" || Incident_Location == "Toronto") 
                     {
-                        report.InnerHtml += "Investigation is still pending.";
+                        confirm_report.InnerHtml += "Investigation is still pending.";
                     }
 
-                    if (Importance_Of_Querry == "Resolved decision")
+                    if (Incident_Location == "Etobicoke")
                     {
-                      report.InnerHtml += "Decision after resolving the incident is requested.";
+                        confirm_report.InnerHtml += "Incident is resolved.";
                     }
+
+                    if (Incident_Location == "Missisaga")
+                    {
+                        confirm_report.InnerHtml += "Report will be provided within a week.";
+                    }
+
+                    //confirm_report.InnerHtml +=
                 }
             }
         }

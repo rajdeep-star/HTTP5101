@@ -44,30 +44,40 @@
             <asp:TextBox runat="server" ID="number_of_copies"></asp:TextBox>
             <asp:RangeValidator runat="server" EnableClientScript="true" ControlToValidate="number_of_copies" ErrorMessage="You can ask for maximum 2 copies at one time" MinimumValue="1" MaximumValue="2" ></asp:RangeValidator>
         
-            <h3>Which one of the following is of utmost importance regarding this report querry?</h3>
+           <% /* <!-- <h3>Which one of the following is of utmost importance regarding this report querry?</h3>
                 <asp:RadioButtonList runat="server" ID="importance">
                     <asp:ListItem Text="Requires urgent attention" Value="urgent_attention"></asp:ListItem>
                     <asp:ListItem Text="Pending investigation" Value="pending_invest"></asp:ListItem>
                     <asp:ListItem Text="Resolved decision" Value="resolve_decision"></asp:ListItem>
-            </asp:RadioButtonList> 
-            <asp:RequiredFieldValidator runat="server" EnableClientScript="false" ErrorMessage="confirm the importance of querry" ControlToValidate="importance"></asp:RequiredFieldValidator>
-            
+                </asp:RadioButtonList>
+            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="confirm the importance of querry" ControlToValidate="importance"></asp:RequiredFieldValidator>
+            -->
+
+            <!-- <asp:DropDownList runat="server" ID="importance_of_querry">
+                 <asp:ListItem Text="--Select--" Value="Select"></asp:ListItem>
+                    <asp:ListItem Text="Requires urgent attention" Value="urgent_attention"></asp:ListItem>
+                    <asp:ListItem Text="Pending investigation" Value="pending_invest"></asp:ListItem>
+                    <asp:ListItem Text="Resolved decision" Value="resolve_decision"></asp:ListItem>
+             </asp:DropDownList> --> */ %>
+
+
+
             <section>
                 <asp:ValidationSummary runat="server" ShowSummary="true" />
             </section>
         
-            <section id="report" runat="server">
-            </section>
+            <!-- <section id="report" runat="server">
+            </section> -->
             
 
-        <!-- <h3>Have you submitted a report form before ?</h3> 
+         <h3>Have you submitted a report form before ?</h3> 
             <asp:RadioButtonList runat="server" ID="previous_submission">
                     <asp:ListItem Text="Yes" Value="report_submitted_previously"></asp:ListItem>
                     <asp:ListItem Text="No" Value="report_unsubmeiited_previously"></asp:ListItem>
             </asp:RadioButtonList> 
             <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please Provide information about any previous report submission"  ControlToValidate="previous_submission"></asp:RequiredFieldValidator>
 
-            <h3></h3> -->
+            
 
            <!-- <h3>Mark the documents you are attaching with the report form.</h3>
             <asp:CheckBoxList  runat="server" id="documents">
@@ -86,6 +96,17 @@
 
                       
               <!-- <div runat="server" id="testbox"></div> --> 
+
+            <!-- <section>
+                <asp:ValidationSummary runat="server" ShowSummary="true" />
+            </section> -->
+        
+            <section id="confirm_report" runat="server">
+            </section>
+
+            <section>
+                <asp:ValidationSummary runat="server" ShowSummary="true" />
+            </section>
             
             <asp:Button runat="server" text="submit"/> 
      </form>

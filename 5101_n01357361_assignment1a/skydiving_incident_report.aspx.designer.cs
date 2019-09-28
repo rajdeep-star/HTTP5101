@@ -76,15 +76,6 @@ namespace _5101_n01357361_assignment1a {
         protected global::System.Web.UI.WebControls.TextBox number_of_copies;
         
         /// <summary>
-        /// importance control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList importance;
-        
-        /// <summary>
         /// report control.
         /// </summary>
         /// <remarks>
@@ -128,5 +119,14 @@ namespace _5101_n01357361_assignment1a {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl testbox;
+        
+        /// <summary>
+        /// confirm_report control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl confirm_report;
     }
 }
